@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Juego de caracteres -->
+        <meta charset="utf-8">
+        <!-- Responsibidad -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Estilos y scripts de Bootstrap 5.0.2 mediante CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- Estilos -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Tienda XDA</title>
+    </head>
+    <body>
+        <!-- Bloque negro para el XDA-->
+        <div class="navbar__blackBlock">
+        </div>
+        <!-- Barra de navegacion -->
+        <header class="navbar navbar-expand-sm navbar-light p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar__blackBlock-text text-light" href="#">XDA</a>
+                <!-- Hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Opciones -->
+                <nav class="collapse navbar-collapse justify-content-end navbar__collapse-height" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mujer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Contenedor mayor -->
+        <section class="mainContent">
+            <!-- Contenedor de informacion -->
+            <section class="mainContent__info">
+                <!-- Texto principal con su boton -->
+                <article class="mainContent__info-welcome">
+                    <h1 class="mainContent__info-welcomeH1">LOREM IPSUM AD VALOREM</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <button type="button" class="mainContent__info-button">Ir a la tienda</button>
+                </article>
+                <!-- Footer -->
+                <footer class="mainContent__info-footer">
+                    <!-- Seccion de inscripcion -->
+                    <div class="mainContent__info-footerEmail">
+                        <h1 class="mainContent__info-footerH1">Newsletter</h1>
+                        <h2>Correo electronico</h2>
+                        <input type="text" class="form-control mainContent__info-footerInfoInput" placeholder="Correo electronico">
+                    </div>
+                    <!-- Texto vertical para suscribirse -->
+                    <div class="mainContent__info-footerSub">
+                        <h1 class="mainContent__info-footerSubFont">Suscribir</h1>
+                    </div>
+                </footer>
+            </section>
+            <!-- Contenedor con la imagen del colorin -->
+            <section class="mainContent__glassesGuy">
+                <img src="assets/img/imagen1.png" class="mainContent__glassesGuy-img" alt="main-alt">
+            </section>
+        </section>
+    </body>
+</html>

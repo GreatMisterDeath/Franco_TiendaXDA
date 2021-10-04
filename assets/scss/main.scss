@@ -1,0 +1,14 @@
+// Importacion de fuentes
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+
+// Integracion de parciales
+@import 'abstract/reset'; // Reinicio de estilos
+@import 'abstract/variables'; // Variables de colores, tamaños de fuente etc...
+//@import "vendors/vendors";
+//@import 'base/base';
+@import 'layout/main';
+@import 'layout/navbar';
+//@import 'components/components';
+//@import 'pages/pages';
+//@import 'themes/themes';

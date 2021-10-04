@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-family: "Old Standard TT", "Arial";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+h1.mainContent__info-footerH1 {
+  color: #FFFFFF;
+  font-family: "Old Standard TT", "Arial";
+  font-weight: 700;
+  font-size: 30px;
+}
+
+h1.mainContent__info-welcomeH1 {
+  color: #0C0910;
+  font-family: "Old Standard TT", "Arial";
+  font-weight: 700;
+  font-size: 30px;
+}
+
+p {
+  color: #646266;
+  font-family: "Raleway", "Arial";
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .mainContent {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .mainContent__glassesGuy-img {
+    width: 100%;
+    height: 50vw;
+    object-position: top;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1025px) {
+  .mainContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .mainContent__glassesGuy-img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .mainContent__info-welcome {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    height: 70%;
+  }
+
+  .mainContent__info-button {
+    color: #0C0910;
+    font-family: "Raleway", "Arial";
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    color: #0C0910;
+    border: 2px solid #0C0910;
+    width: 112px;
+  }
+  .mainContent__info-button:hover {
+    color: #0C0910;
+    border: 2px solid #D1D1D1;
+  }
+  .mainContent__info-button:focus {
+    color: #D1D1D1;
+    border: 2px solid #D1D1D1;
+  }
+}
+@media (min-width: 769px) {
+  .mainContent__info-welcome {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    height: 70%;
+  }
+
+  .mainContent__info-button {
+    color: #0C0910;
+    font-family: "Raleway", "Arial";
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    color: #0C0910;
+    border: 2px solid #0C0910;
+    width: 144px;
+    padding: 8px;
+  }
+  .mainContent__info-button:hover {
+    color: #0C0910;
+    border: 2px solid #D1D1D1;
+  }
+  .mainContent__info-button:focus {
+    color: #D1D1D1;
+    border: 2px solid #D1D1D1;
+  }
+}
+.mainContent__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .mainContent__info {
+    width: 100%;
+  }
+  .mainContent__info .mainContent__info-footerSubFont {
+    font-family: "Old Standard TT", "Arial";
+    font-weight: 700;
+    font-size: 30px;
+    transform: rotate(-270deg) translateX(60%);
+  }
+}
+@media (min-width: 1025px) {
+  .mainContent__info {
+    width: 50%;
+  }
+  .mainContent__info .mainContent__info-footerSubFont {
+    font-family: "Old Standard TT", "Arial";
+    font-weight: 700;
+    font-size: 3vw;
+    transform: rotate(-270deg);
+  }
+}
+
+.mainContent__info-footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+}
+
+.mainContent__info-footerEmail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #0C0910;
+  width: 90%;
+  height: 100%;
+  padding: 32px;
+}
+
+.mainContent__info-footerInfoInput {
+  width: 50%;
+  min-width: 192px;
+}
+
+.mainContent__info-footerSub {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 10%;
+  height: 100%;
+}
+
+.mainContent__glassesGuy {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1024px) {
+  .mainContent__glassesGuy {
+    width: 100%;
+  }
+}
+@media (min-width: 1025px) {
+  .mainContent__glassesGuy {
+    width: 50%;
+  }
+}
+
+.navbar__blackBlock {
+  position: absolute;
+  background-color: #0C0910;
+  width: 72px;
+  height: 72px;
+  z-index: 1;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  transform: scale(125%);
+}
+
+.navbar__blackBlock-text {
+  z-index: 2;
+  font-family: "Old Standard TT", "Arial" !important;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .navbar__blackBlock-text {
+    transform: translateX(-15px);
+  }
+}
+@media (min-width: 768px) {
+  .navbar__blackBlock-text {
+    transform: translateX(-15px) rotate(270deg);
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar__collapse-height {
+    margin-top: 32px;
+  }
+}
+
+.nav-link {
+  color: #0C0910 !important;
+  font-family: "Raleway", "Arial" !important;
+  font-weight: 700;
+}
+.nav-link:hover {
+  color: #646266 !important;
+}
+.nav-link:focus {
+  color: #A6A4A8 !important;
+}
+
+/*# sourceMappingURL=style.css.map */
